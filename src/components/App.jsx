@@ -22,7 +22,7 @@ export class App extends Component {
   };
 
   formSubmitHandler = data => {
-    const { name, number } = data;
+    const { name } = data;
     const isDuplicate = this.state.contacts.some(
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
